@@ -67,7 +67,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Spring18/Web_Lesson1_SourceCode" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunDashboard">
@@ -93,12 +93,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516487534533</updated>
       <workItem from="1516487536056" duration="9000" />
-      <workItem from="1516681977924" duration="429000" />
+      <workItem from="1516681977924" duration="725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="438000" />
+    <option name="totallyTimeSpent" value="734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-sccale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <script src="../Scripts/Index.js"></script>
+    <script>
+       function getCourses(){
+
+           if (educationType == "" || semester == "" || option == "") {
+               $("#tst").text("Please select mandatory fields");
+           }
+           else{
+               $("#courses").show();
+               $("#tst").text("Below are the available courses");
+           }
+       }
+
+    </script>
+</head>
+<body class="container">
+<div class="row">
+    <h2>Welcome to Course Registration Website</h2>
+    <br/>
+    <label>Select Level of Education:</label>
+    <div class="btn-group">
+    <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        --Select-- <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" id="education">
+        <li><a class="dropdown-item" href="#">Bachelors</a></li>
+        <li><a class="dropdown-item" href="#">Masters</a></li>
+    </ul>
+    </div>
+
+
+    <label>Select Semester:</label>
+<div class="btn-group ">
+    <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        --Select-- <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" id="sem">
+        <li><a class="dropdown-item" href="#">Spring</a></li>
+        <li><a class="dropdown-item" href="#">Fall</a></li>
+        <li><a class="dropdown-item" href="#">Summer</a></li>
+    </ul>
+</div>
+
+    <label>Career Option:</label>
+<div class="btn-group">
+    <button type="button" class="btn  btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        --Select-- <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" id="career_option">
+        <li><a class="dropdown-item" href="#">Computer Science</a></li>
+        <li><a class="dropdown-item" href="#">Law</a></li>
+    </ul>
+</div>
+
+    <button class="btn btn-sm btn-success" onclick="getCourses()">Submit</button> <br >
+    <p id="tst" style="color: red"></p>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered" id="courses" style="border:1px;">
+            <thead>
+            <tr>
+                <th>Instructor</th>
+                <th>Course Description</th>
+                <th>Prerequisites</th>
+                <th>Credit hours</th>
+                <th>Duration</th>
+                <th>Rating</th>
+                <th>Reviews about previous instructor</th>
+                <th>Similar online course links</th>
+                <th>Image</th>
+                <th>URL</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Yugung Lee</td>
+                <td>ASE</td>
+                <td>Introduction to SE</td>
+                <td>3.00</td>
+                <td>4hrs</td>
+                <td>5</td>
+                <td>Excellent course structure and teaching</td>
+                <td>
+              <span style="display: inline-block">
+                <a href="https://www.udacity.com/courses/software-engineering">Udacity</a>
+                <a href="https://www.udemy.com/courses/development/software-engineering/">Udemy</a>
+                <a href="https://www.coursera.org/courses/software-engineering">Coursera</a>
+              </span>
+                </td>
+                <td align="center">
+                    <a href="Registration.html"> <img src="../Images/ase.jpg" height="100" width="100"/> </a>
+                </td>
+                <td><a href="Registration.html">ASE URL</a> </td>
+            </tr>
+            <tr>
+                <td>Choi</td>
+                <td>Cloud Computing</td>
+                <td>Network Architecture</td>
+                <td>3.00</td>
+                <td>3hrs</td>
+                <td>4</td>
+                <td>We can gain good knowledge in trending Cloud Technologies</td>
+                <td>
+              <span style="display: inline-block">
+                <a href="https://www.coursera.org/specializations/cloud-computing/">Coursera</a>
+                <a href="https://www.udemy.com/introduction-to-cloud-computing/ ,">Udemy</a>
+                <a href="https://www.edx.org/course/subject/computer-science/cloud-computing">Edx</a>
+              </span>
+                </td>
+                <td align="center">
+                    <a href="Registration.html"> <img src="../Images/cloud.jpg" height="100" width="100"/> </a>
+                </td>
+                <td><a href="Registration.html">CLOUD URL</a> </td>
+            </tr>
+            <tr>
+                <td>Zheng</td>
+                <td>SMT</td>
+                <td>Introduction to SE</td>
+                <td>3.00</td>
+                <td>3.5hrs</td>
+                <td>4.5</td>
+                <td>We can gain good knowledge about Plugins and different software tools</td>
+                <td>
+              <span style="display: inline-block">
+                <a href="https://www.capterra.com/training-software/">Capterra</a>
+                <a href="https://www.udemy.com/courses/development/development-tools/">Udemy</a>
+                <a href="https://www.edx.org/course/agile-software-development">Edx</a>
+              </span>
+                </td>
+                <td align="center">
+                    <a href="Registration.html"><img src="../Images/smt.JPG" height="100" width="100"/></a>
+                </td>
+                <td><a href="Registration.html">SMT URL</a> </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

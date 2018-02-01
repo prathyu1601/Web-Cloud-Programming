@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-sccale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <script>
+        function confirmRegister() {
+            alert('Successfully registered');
+            $("#availableSeats").text($("#availableSeats").text() - 1) ;
+
+        }
+    </script>
+
+</head>
+<body class="container">
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th> Total number of seats </th>
+                <th> Available seats </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>30 </td>
+                <td id="availableSeats">15 </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn" onclick="confirmRegister()">Register</button>
+</div>
+</body>
+</html>
