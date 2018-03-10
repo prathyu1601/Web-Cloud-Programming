@@ -1,0 +1,36 @@
+﻿
+<html ng-app="youtubeapp">
+<head>
+    <meta charset="utf-8" />
+    <title>Youtube Keyword Search</title>
+</head>
+<body ng-controller="searchController" style="background-image:url('Images/bg.png'); justify-content:center">
+  <center>
+      <h2>
+          YOUTUBE API SEARCH LIST!!!
+      </h2>
+      <hr />
+  </center>
+    <div class="container" style="text-align:center">
+        
+        <h4>Please enter Search Keyword below: </h4>
+        <input type="text" name="KeywordSearch" id="KeywordSearch" />
+        <button id="btn_Search" ng-click="getYoutubeLinks()">Search</button>
+    </div>
+    <div class="results" style="text-align:center">
+        <br/>
+        <strong><span style="font-style:oblique">Video Description:</span></strong>
+        <div ng-repeat="id in YoutubeLink">
+            <p>{{ id.title }}</p>
+          
+            <iframe class="video w100" width="560" height="300" ng-src="{{ id.vid }}"></iframe>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+    
